@@ -52,63 +52,43 @@
       line-height: 1.6;
       color: #444;
     }
-    section.solutions {
+    section.showcase {
       padding: 4rem 2rem;
       background-color: #fff;
     }
-    .solutions h3 {
+    .showcase h3 {
       text-align: center;
       font-size: 1.8rem;
       margin-bottom: 3rem;
     }
-    .solution-grid {
+    .case-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
       max-width: 1100px;
       margin: 0 auto;
     }
-    .solution {
+    .case {
       background: #fafafa;
       border-radius: 10px;
       padding: 2rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       transition: transform 0.2s;
     }
-    .solution:hover {
-      transform: translateY(-4px);
+    .case:hover {
+      transform: translateY(-3px);
     }
-    .solution h4 {
+    .case h4 {
       color: #D86830;
       margin-bottom: 0.5rem;
     }
-    .solution p {
-      color: #555;
-      line-height: 1.5;
-    }
-    .demo {
-      background-color: #f7f7f7;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .demo h3 {
-      font-size: 1.6rem;
+    .case section {
       margin-bottom: 1rem;
     }
-    .demo p {
-      max-width: 700px;
-      margin: 0 auto 2rem;
-      color: #444;
-      line-height: 1.6;
-    }
-    .demo a {
-      display: inline-block;
-      background: #D86830;
-      color: white;
-      padding: 0.8rem 1.6rem;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: 500;
+    .case p {
+      color: #555;
+      line-height: 1.5;
+      margin: 0.4rem 0;
     }
     footer {
       text-align: center;
@@ -140,72 +120,119 @@
   </header>
 
   <section class="hero">
-    <h2>Automation in Action</h2>
+    <h2>Applied Automation</h2>
     <p>
-      From marketing workflows to onboarding sequences, Helvetic Automation demonstrates how smart automation can turn complex processes into efficient, repeatable systems.
-      Explore examples of practical business automation below.
+      Each project below demonstrates how automation translates into measurable outcomes.  
+      We focus on combining technical reliability with clear business value — scalable, maintainable, and built on open technologies.
     </p>
   </section>
 
-  <section class="solutions">
-    <h3>Example Workflows</h3>
-    <div class="solution-grid">
+  <section class="showcase">
+    <h3>Selected Use Cases</h3>
+    <div class="case-grid">
 
-      <div class="solution">
-        <h4>Social Media Posting</h4>
-        <p>
-          Automatically post updates to Twitter and Instagram.  
-          Combine live data sources, generate engaging captions, and schedule releases across platforms — saving hours of manual coordination.
-        </p>
+      <div class="case">
+        <h4>Automated Social Posting</h4>
+        <section>
+          <strong>Goal</strong>
+          <p>Publish multi-platform updates with consistent tone and timing, reducing manual workload for communication teams.</p>
+        </section>
+        <section>
+          <strong>Approach</strong>
+          <p>n8n workflow combining data feeds, AI-generated text, and API-based media uploads to Twitter and Instagram.</p>
+        </section>
+        <section>
+          <strong>Outcome</strong>
+          <p>Eliminated manual post scheduling, improved consistency, and enabled content updates driven by live data.</p>
+        </section>
+        <section>
+          <strong>Technologies</strong>
+          <p>n8n, OpenAI API, Twitter API v2, Instagram Graph API, Docker</p>
+        </section>
       </div>
 
-      <div class="solution">
-        <h4>Newsletter Sign-up Processing</h4>
-        <p>
-          Integrate website forms, email platforms, and CRM tools.  
-          Automatically validate new sign-ups, apply segmentation rules, and trigger tailored welcome campaigns without human intervention.
-        </p>
+      <div class="case">
+        <h4>Newsletter Processing</h4>
+        <section>
+          <strong>Goal</strong>
+          <p>Automate subscriber handling from website forms to CRM and mailing tools while maintaining data accuracy.</p>
+        </section>
+        <section>
+          <strong>Approach</strong>
+          <p>Workflow validates sign-ups, enriches records from CRM API, and routes data to an email platform via secure webhooks.</p>
+        </section>
+        <section>
+          <strong>Outcome</strong>
+          <p>Reduced lead processing time by 80% and ensured GDPR-compliant data handling through transparent logs.</p>
+        </section>
+        <section>
+          <strong>Technologies</strong>
+          <p>n8n, HubSpot API, Mailchimp API, PostgreSQL</p>
+        </section>
       </div>
 
-      <div class="solution">
-        <h4>Customer Onboarding</h4>
-        <p>
-          Automate client onboarding steps — account creation, data entry, welcome communication, and progress tracking — to ensure a consistent experience and faster time-to-value.
-        </p>
+      <div class="case">
+        <h4>Customer Onboarding Automation</h4>
+        <section>
+          <strong>Goal</strong>
+          <p>Accelerate customer activation for service-based platforms by automating recurring setup and communication steps.</p>
+        </section>
+        <section>
+          <strong>Approach</strong>
+          <p>Linked form submissions to account creation, file provisioning, and follow-up notifications.  
+          Used modular workflows for flexibility and easy maintenance.</p>
+        </section>
+        <section>
+          <strong>Outcome</strong>
+          <p>Improved onboarding consistency and allowed scaling without additional operational overhead.</p>
+        </section>
+        <section>
+          <strong>Technologies</strong>
+          <p>n8n, REST APIs, SendGrid, Keycloak, Slack Webhooks</p>
+        </section>
       </div>
 
-      <div class="solution">
-        <h4>Report Generation</h4>
-        <p>
-          Collect metrics from internal systems and produce polished summaries or dashboards automatically.  
-          Deliver consistent insights with minimal manual effort.
-        </p>
+      <div class="case">
+        <h4>Automated Reporting</h4>
+        <section>
+          <strong>Goal</strong>
+          <p>Provide weekly business performance summaries without manual data consolidation.</p>
+        </section>
+        <section>
+          <strong>Approach</strong>
+          <p>Automated extraction from multiple APIs, aggregation in a central dataset, and generation of formatted reports and charts.</p>
+        </section>
+        <section>
+          <strong>Outcome</strong>
+          <p>Time spent on reporting reduced from hours to minutes, with higher data accuracy and reproducibility.</p>
+        </section>
+        <section>
+          <strong>Technologies</strong>
+          <p>n8n, Python, QuickChart API, Grafana, PostgreSQL</p>
+        </section>
       </div>
 
-      <div class="solution">
-        <h4>Monitoring & Alerts</h4>
-        <p>
-          Detect anomalies, performance drops, or failed transactions automatically.  
-          Integrate alerts directly into chat or ticketing systems for instant visibility.
-        </p>
-      </div>
-
-      <div class="solution">
-        <h4>Data Enrichment & AI Assistance</h4>
-        <p>
-          Use automation to combine multiple APIs and enrich data with intelligent context — generating summaries, insights, or predictive outputs when relevant.
-        </p>
+      <div class="case">
+        <h4>Monitoring & Alert Integration</h4>
+        <section>
+          <strong>Goal</strong>
+          <p>Connect observability metrics to actionable notifications for operational teams.</p>
+        </section>
+        <section>
+          <strong>Approach</strong>
+          <p>Integrated performance monitoring with chat alerts, using dynamic thresholds and incident tracking through APIs.</p>
+        </section>
+        <section>
+          <strong>Outcome</strong>
+          <p>Increased visibility and shortened reaction time to incidents, improving system reliability.</p>
+        </section>
+        <section>
+          <strong>Technologies</strong>
+          <p>Grafana, Loki, n8n, Slack API, Prometheus</p>
+        </section>
       </div>
 
     </div>
-  </section>
-
-  <section class="demo">
-    <h3>Interactive Demos Coming Soon</h3>
-    <p>
-      This section will feature live prototypes of selected workflows — including automated social posting, onboarding assistants, and data-driven reporting — built with tools like n8n, Grafana, and OpenAI integrations.
-    </p>
-    <a href="#">Stay Updated</a>
   </section>
 
   <footer>
