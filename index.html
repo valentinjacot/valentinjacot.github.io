@@ -1,1 +1,177 @@
-#Hello World 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helvetic Automation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #222;
+    }
+    header {
+      background-color: #fff;
+      padding: 2rem 4rem;
+      border-bottom: 1px solid #e3e3e3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.4rem;
+      color: #D86830;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #D86830;
+    }
+    section.hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    }
+    section.hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+    section.hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+    section.services {
+      padding: 4rem 2rem;
+      background-color: #fff;
+    }
+    .services h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .service {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .service:hover {
+      transform: translateY(-4px);
+    }
+    .service h4 {
+      color: #D86830;
+      margin-bottom: 0.5rem;
+    }
+    .service p {
+      color: #555;
+      line-height: 1.5;
+    }
+    section.cta {
+      text-align: center;
+      padding: 5rem 2rem;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+    section.cta h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    section.cta p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Helvetic Automation</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Solutions</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transforming Business with Smart Automation</h2>
+    <p>
+      Helvetic Automation helps organizations increase efficiency and insight by combining automation, data integration, and intelligent systems. 
+      We focus on building sustainable value—where technology supports better decisions and smoother operations.
+    </p>
+  </section>
+
+  <section class="services">
+    <h3>What We Do</h3>
+    <div class="service-grid">
+      <div class="service">
+        <h4>Process Automation</h4>
+        <p>Streamline repetitive tasks and connect systems using flexible, transparent workflows built with open technologies.</p>
+      </div>
+      <div class="service">
+        <h4>Data & Monitoring</h4>
+        <p>Collect and visualize operational data for smarter, faster decisions. Gain clarity on performance and reliability.</p>
+      </div>
+      <div class="service">
+        <h4>Intelligent Insights</h4>
+        <p>Leverage automation combined with AI-assisted analysis to highlight trends and opportunities across your business processes.</p>
+      </div>
+      <div class="service">
+        <h4>Custom Integrations</h4>
+        <p>Bridge existing tools and platforms to create seamless, data-driven environments designed around your goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3>Building Value Through Automation</h3>
+    <p>
+      Our approach starts with understanding your objectives and ends with measurable outcomes. Whether you need a prototype or enterprise-grade integration, Helvetic Automation provides tailored, reliable, and scalable solutions.
+    </p>
+    <a href="#" style="background:#D86830; color:white; padding:0.8rem 1.6rem; border-radius:4px; text-decoration:none; font-weight:500;">Get in Touch</a>
+  </section>
+
+  <footer>
+    © 2025 Helvetic Automation. All rights reserved.
+  </footer>
+
+</body>
+</html>
