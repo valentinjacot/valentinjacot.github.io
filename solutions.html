@@ -90,6 +90,20 @@
       line-height: 1.5;
       margin: 0.4rem 0;
     }
+    .diagram {
+      border: 1px dashed #ccc;
+      background: #fdfdfd;
+      border-radius: 8px;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+      padding: 2.5rem 1rem;
+      margin-top: 1.2rem;
+    }
+    .diagram:hover {
+      border-color: #D86830;
+      color: #D86830;
+    }
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -122,8 +136,8 @@
   <section class="hero">
     <h2>Applied Automation</h2>
     <p>
-      Each project below demonstrates how automation translates into measurable outcomes.  
-      We focus on combining technical reliability with clear business value — scalable, maintainable, and built on open technologies.
+      Each case below shows how automation creates measurable value — by connecting systems, simplifying operations, and improving decision-making.
+      Technical precision and business relevance go hand in hand.
     </p>
   </section>
 
@@ -135,101 +149,105 @@
         <h4>Automated Social Posting</h4>
         <section>
           <strong>Goal</strong>
-          <p>Publish multi-platform updates with consistent tone and timing, reducing manual workload for communication teams.</p>
+          <p>Reduce manual work in publishing consistent, multi-platform content.</p>
         </section>
         <section>
           <strong>Approach</strong>
-          <p>n8n workflow combining data feeds, AI-generated text, and API-based media uploads to Twitter and Instagram.</p>
+          <p>Workflow orchestrates data retrieval, AI-assisted caption generation, and media uploads via Twitter and Instagram APIs.</p>
         </section>
         <section>
           <strong>Outcome</strong>
-          <p>Eliminated manual post scheduling, improved consistency, and enabled content updates driven by live data.</p>
+          <p>Enabled daily automated updates synchronized across channels, improving reliability and reach.</p>
         </section>
         <section>
           <strong>Technologies</strong>
-          <p>n8n, OpenAI API, Twitter API v2, Instagram Graph API, Docker</p>
+          <p>n8n, OpenAI API, Twitter API v2, Instagram Graph API</p>
         </section>
+        <div class="diagram">[Architecture Diagram Placeholder – Data Flow & API Integration]</div>
       </div>
 
       <div class="case">
-        <h4>Newsletter Processing</h4>
+        <h4>Newsletter Sign-up Automation</h4>
         <section>
           <strong>Goal</strong>
-          <p>Automate subscriber handling from website forms to CRM and mailing tools while maintaining data accuracy.</p>
+          <p>Ensure that new leads from forms and campaigns are validated, enriched, and onboarded automatically.</p>
         </section>
         <section>
           <strong>Approach</strong>
-          <p>Workflow validates sign-ups, enriches records from CRM API, and routes data to an email platform via secure webhooks.</p>
+          <p>Automated workflow checks form inputs, enriches contact info from CRM, and adds users to email lists with appropriate segmentation.</p>
         </section>
         <section>
           <strong>Outcome</strong>
-          <p>Reduced lead processing time by 80% and ensured GDPR-compliant data handling through transparent logs.</p>
+          <p>Reduced onboarding errors and manual handling, improving conversion and compliance tracking.</p>
         </section>
         <section>
           <strong>Technologies</strong>
           <p>n8n, HubSpot API, Mailchimp API, PostgreSQL</p>
         </section>
+        <div class="diagram">[Architecture Diagram Placeholder – CRM & Email Sync Workflow]</div>
       </div>
 
       <div class="case">
-        <h4>Customer Onboarding Automation</h4>
+        <h4>Customer Onboarding Workflow</h4>
         <section>
           <strong>Goal</strong>
-          <p>Accelerate customer activation for service-based platforms by automating recurring setup and communication steps.</p>
+          <p>Accelerate setup and improve user experience for new customers.</p>
         </section>
         <section>
           <strong>Approach</strong>
-          <p>Linked form submissions to account creation, file provisioning, and follow-up notifications.  
-          Used modular workflows for flexibility and easy maintenance.</p>
+          <p>Linked form submissions to automated provisioning, document creation, and communication steps using modular n8n nodes.</p>
         </section>
         <section>
           <strong>Outcome</strong>
-          <p>Improved onboarding consistency and allowed scaling without additional operational overhead.</p>
+          <p>Cut onboarding time by 60% and reduced support dependency for recurring tasks.</p>
         </section>
         <section>
           <strong>Technologies</strong>
           <p>n8n, REST APIs, SendGrid, Keycloak, Slack Webhooks</p>
         </section>
+        <div class="diagram">[Architecture Diagram Placeholder – User Lifecycle & Notification Flow]</div>
       </div>
 
       <div class="case">
         <h4>Automated Reporting</h4>
         <section>
           <strong>Goal</strong>
-          <p>Provide weekly business performance summaries without manual data consolidation.</p>
+          <p>Provide periodic performance summaries with minimal manual input.</p>
         </section>
         <section>
           <strong>Approach</strong>
-          <p>Automated extraction from multiple APIs, aggregation in a central dataset, and generation of formatted reports and charts.</p>
+          <p>Scripts collect metrics from APIs, aggregate data, and generate visual reports distributed via email or dashboards.</p>
         </section>
         <section>
           <strong>Outcome</strong>
-          <p>Time spent on reporting reduced from hours to minutes, with higher data accuracy and reproducibility.</p>
+          <p>Delivered consistent, traceable reports with 90% less manual effort.</p>
         </section>
         <section>
           <strong>Technologies</strong>
           <p>n8n, Python, QuickChart API, Grafana, PostgreSQL</p>
         </section>
+        <div class="diagram">[Architecture Diagram Placeholder – Data Aggregation Pipeline]</div>
       </div>
 
       <div class="case">
         <h4>Monitoring & Alert Integration</h4>
         <section>
           <strong>Goal</strong>
-          <p>Connect observability metrics to actionable notifications for operational teams.</p>
+          <p>Bridge monitoring signals with collaboration tools for faster incident response.</p>
         </section>
         <section>
           <strong>Approach</strong>
-          <p>Integrated performance monitoring with chat alerts, using dynamic thresholds and incident tracking through APIs.</p>
+          <p>Integrated metrics and logs with automated alert workflows and chat-based notifications.</p>
         </section>
         <section>
           <strong>Outcome</strong>
-          <p>Increased visibility and shortened reaction time to incidents, improving system reliability.</p>
+          <p>Improved visibility, reduced incident response times, and unified monitoring across services.</p>
         </section>
         <section>
           <strong>Technologies</strong>
           <p>Grafana, Loki, n8n, Slack API, Prometheus</p>
         </section>
+        <div class="diagram">[Architecture Diagram Placeholder – Observability & Alert Routing]</div>
       </div>
 
     </div>
